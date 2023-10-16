@@ -8,7 +8,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/override-bootstrap.css">
   <link rel="styleshet" href="assets/css/style.css">
-  <title>Cuisinea</title>
+  <title>Cuisinella</title>
 </head>
 
 <body>
@@ -59,15 +59,43 @@
     </div>
 
     <div class="row">
-      <div class="card" style="width: 18rem;">
-        <img src="uploads/recipes/1-chocolate-au-mousse.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="uploads/recipes/1-chocolate-au-mousse.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="uploads/recipes/2-gratin-dauphinois.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="uploads/recipes/3-salade.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
