@@ -2,15 +2,8 @@
 
   require_once('lib/config.php');
 
-
   $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
-  $mainMenu = [
-    'index.php' =>'Accueil',
-    'recettes.php'=> 'Nos recettes', 
-  ];
-
- 
 ?>
 <!DOCTYPE html>
 <html lang="fr">
