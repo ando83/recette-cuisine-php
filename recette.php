@@ -2,6 +2,8 @@
   
   require_once('templates/header.php');
   require_once('lib/recipe.php');
+  require_once('lib/tools.php');
+
 
   
 
@@ -20,7 +22,9 @@
     $imagePath = _RECIPES_IMG_PATH_.$recipe['image'];
   }
 
- $ingredients = explode(PHP_EOL, $recipe['ingredients']);
+ $ingredients = linesToArray($recipe['ingredients']);
+ $ingredients = linesToArray($recipe['instructions']);
+
  ?>
 
 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -41,6 +45,15 @@
             <li class="list-group-item"><?=$ingredient; ?></li>
         <?php } ?>
     </ul>
+</div>
+
+<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <h2>Ingrédients</h2>
+    <ol class="list-group">
+        <?php foreach ($instructions as $key => $instruction) { ?>
+            <li class="list-group-item"><?=$instruction; ?></li>
+        <?php } ?>
+    </ol>
 </div>
 
 
