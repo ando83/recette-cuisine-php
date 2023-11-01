@@ -12,3 +12,11 @@ function getRecipeById(PDO $pdo, int $id) {
   $query->execute();
   return $recipe = $query->fetch();
 }
+
+function getRecipeImage(string $image) {
+  if($image === null) {
+    return _ASSETS_IMG_PATH_.'recipe_default.jpg';
+  }else {
+    return _RECIPES_IMG_PATH_.$image;
+  }
+}
