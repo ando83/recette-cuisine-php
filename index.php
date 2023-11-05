@@ -2,7 +2,9 @@
   
   require_once('templates/header.php');
   require_once('lib/recipe.php');
-
+  
+  $recipes = getRecipes($pdo, 3);
+  
  ?>
 
     <div class="container col-xxl-8 px-4 py-5">
@@ -33,5 +35,5 @@
 
     <?php
 
-    include_once('templates/footer.php');
+    require_once('templates/footer.php');
     ?>
